@@ -21,10 +21,8 @@ jobs:
         run: npm i
       - name: Lint check
         run: npm run lint
-      - name: tsc compile
-        run: npm run build
       - name: release
-        run: npx semantic-release
+        run: npm run build && npx semantic-release
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
           GH_TOKEN: ${{secrets.GH_TOKEN}}
