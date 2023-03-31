@@ -22,8 +22,9 @@ jobs:
       - name: Lint check
         run: npm run lint
       - name: tsc compile
-        uses: iCrawl/action-tsc@v1
-      - run: npx semantic-release
+        run: npm run build
+      - name: release
+        run: npx semantic-release
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
           GH_TOKEN: ${{secrets.GH_TOKEN}}
