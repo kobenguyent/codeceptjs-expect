@@ -5,7 +5,7 @@ This is an expect-wrapper that you can use with CodeceptJS.
 # Installation
 
 This requires [Node.js](https://nodejs.org/) v16+ to run.
-NPM package: https://www.npmjs.com/package/codeceptjs-expectwrapper
+NPM package: https://www.npmjs.com/package/codeceptjs-expect
 
 ```sh
 cd codeceptjs-project
@@ -21,8 +21,8 @@ Example:
 ```json
 {
     "helpers": {
-        "Expectwrapper": {
-            "require": "codeceptjs-expectwrapper"
+        "ExpectHelper": {
+            "require": "codeceptjs-expect"
         }
     }
 }
