@@ -1,0 +1,8 @@
+node_modules
+dist
+tsconfig.json
+tslint.json
+.idea
+.DS_store
+img
+package-lock.json
