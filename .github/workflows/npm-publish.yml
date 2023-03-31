@@ -17,8 +17,10 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-      - run: npm i
-      - run: npm run lint
+      - name: Install deps
+        run: npm i
+      - name: Lint check
+        run: npm run lint
       - name: tsc compile
         uses: iCrawl/action-tsc@v1
       - run: npx semantic-release
