@@ -22,7 +22,7 @@ jobs:
       - name: Lint check
         run: npm run lint
       - name: release
-        run: npm run build && npx semantic-release
+        run: ls && npm run build && npx semantic-release
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
           GH_TOKEN: ${{secrets.GH_TOKEN}}
