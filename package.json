@@ -2,7 +2,7 @@
   "name": "codeceptjs-expect",
   "version": "1.0.0",
   "main": "dist/index.js",
-  "description": "Expect helper to be used with codeceptjs",
+  "description": "Expect helper for codeceptjs",
   "scripts": {
     "lint": "rome check src",
     "lint:fix": "rome check src --apply-suggested",
@@ -25,12 +25,14 @@
     ]
   },
   "dependencies": {
-    "expect": "^28.1.0",
-    "typescript": "^4.9.5",
-    "rome": "^11.0.0",
-    "husky": "^8.0.3"
+    "expect": "^28.1.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.2",
+    "rome": "^11.0.0",
+    "typescript": "^4.9.5"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kobenguyent/codeceptjs-expect.git"
