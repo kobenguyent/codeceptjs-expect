@@ -5,3 +5,6 @@ tslint.json
 .DS_store
 img
 package-lock.json
+test/node_modules
+test/package-lock.json
+test/output
