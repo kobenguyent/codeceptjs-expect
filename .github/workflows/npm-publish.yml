@@ -29,7 +29,8 @@ jobs:
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/
-      - run: cd test & npm i & ls & npm run test
+      - working-directory: ./test
+      - run: npm i & ls & npm run test
 
   publish-npm:
     runs-on: ubuntu-latest
@@ -39,7 +40,7 @@ jobs:
         with:
           node-version: 18
           registry-url: https://registry.npmjs.org/
-      - run: cd .. & npm i
+      - run: npm i
       - run: npm run tsc
       - run: npx semantic-release
         env:
