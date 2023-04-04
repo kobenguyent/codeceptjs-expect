@@ -10,7 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "codeceptjs": "^3.4.1"
+    "codeceptjs": "^3.4.1",
+    "expect": "^28.1.0"
   },
   "devDependencies": {
     "@types/node": "^18.15.11",
