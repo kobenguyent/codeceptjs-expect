@@ -29,8 +29,9 @@ jobs:
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/
-      - working-directory: ./test
-      - run: npm i & ls & npm run test
+      - name: Run tests
+        working-directory: ./test
+        run: npm i & ls & npm run test
 
   publish-npm:
     runs-on: ubuntu-latest
