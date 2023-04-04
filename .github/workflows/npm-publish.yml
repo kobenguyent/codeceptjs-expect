@@ -29,7 +29,7 @@ jobs:
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/
-      - run: cd test && npm i
+      - run: cd test & npm i
       - run: npm run test
 
   publish-npm:
