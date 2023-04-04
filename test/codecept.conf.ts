@@ -15,7 +15,7 @@ export const config: CodeceptJS.MainConfig = {
     },
     JSONResponse: {},
     ExpectHelper: {
-      "require": "../src/index.ts"
+      "require": "../dist/index.js"
     }
   },
   include: {
