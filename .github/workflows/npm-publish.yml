@@ -43,11 +43,12 @@ jobs:
         with:
           node-version: 18
           registry-url: https://registry.npmjs.org/
-      - name: Run tests
+      - name: Publishment
         working-directory: ./
-      - run: npm i
-      - run: npm run tsc
-      - run: npx semantic-release
+        run: |
+          npm i
+          npm run tsc
+          npx semantic-release
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
           GH_TOKEN: ${{secrets.GH_TOKEN}}
